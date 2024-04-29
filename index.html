@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Laker Calculator by Pang</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+	<style type="text/css">
+		input{
+			font-size: 28.1px;
+			font-weight: bold;
+			border-width: 5px;
+			border-color: gold;
+			margin-bottom: 0px;
+			margin-right: 10px;
+			background-color: mediumpurple;
+			color: gold;
+		}
+		body{
+			background-size: 1699px;
+			background-position-x: -124px;
+		}
+
+	</style>
+</head>
+<body style="background-image:url(ADominateLeGoatARange.png);">
+	<center>
+	<form>
+		<br><input type="text" placeholder="Enter the 1st number" id="id1">
+		<br>
+		<input type="text" placeholder="Enter the 2nd number" id="id2">
+		<br>
+		<br><input type="submit" value="Multiply" onclick="compute()" style="margin-top: 433px;">
+		<input type="submit" value="Divide" onclick="divide()" id="one">
+		<input type="submit" value="Subtract" onclick="subtract()" id="one">
+		<input type="submit" value="Add" onclick="add()" id=""></br></br></br></br>
+	</form>
+	<script>
+		function compute() {
+			num1 = document.getElementById('id1').value;
+			num2 = document.getElementById('id2').value;
+			product = num1 * num2;
+				window.alert(product)
+		}
+		function divide() {
+			num1 = document.getElementById('id1').value;
+			num2 = document.getElementById('id2').value;
+			quotient = num1 / num2;
+				window.alert(quotient)
+		}
+		function subtract() {
+			num1 = document.getElementById('id1').value;
+			num2 = document.getElementById('id2').value;
+			difference = num1 - num2;
+				window.alert(difference)
+		}
+		function add() {
+			num1 = Number(document.getElementById('id1').value);
+			num2 = Number(document.getElementById('id2').value);
+			sum = num1 + num2;
+				window.alert(sum)
+		}
+	</script>
+</center>
+</body>
+</html>
